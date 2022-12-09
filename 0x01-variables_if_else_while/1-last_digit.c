@@ -1,55 +1,49 @@
-#include <stdio.h>
-
 #include <stdlib.h>
 
 #include <time.h>
 
+#include <stdio.h>
 
 
-int main()
+
+/**
+ *
+ *  * main - entry point
+ *
+ *   *
+ *
+ *    * Description: Prints a number and it's last digit along with whether its
+ *
+ *     * last digit is 0, greater than 5, or less than 6 and not 0.
+ *
+ *      * Return: 0
+ *
+ *       */
+
+int main(void)
 
 {
 
-	    int n;
+		int n;
 
 
 
-	        /* initialize random seed: */
+			srand(time(0));
 
-	        srand (time(NULL));
-
-
-
-		    /* generate secret number between 0 and RAND_MAX: */
-
-		    n = rand() % RAND_MAX;
+				n = rand() - RAND_MAX / 2;
 
 
 
-		        int lastDigit = n % 10;
+					printf("Last digit of %d is %d %s\n", n, n % 10,
+
+									((n % 10) == 0) ? "and is 0"
+
+												: (((n % 10) > 5) ? "and is greater than 5"
+
+																	: "and is less than 6 and not 0"));
 
 
 
-			    printf("Last digit of %d is %d ", n, lastDigit);
-
-
-
-			        if (lastDigit > 5) {
-
-					        printf("and is greater than 5\n");
-
-						    } else if (lastDigit == 0) {
-
-							            printf("and is 0\n");
-
-								        } else {
-
-										        printf("and is less than 6 and not 0\n");
-
-											    }
-
-
-
-				    return 0;
+						return (0);
 
 }
