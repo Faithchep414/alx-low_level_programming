@@ -8,14 +8,12 @@
  */
 int main(void)
 {
-	 int number;
+	int i;
 
-	  number = 0;
-	  while (number <= 9)
-	  {
-		  putchar('0' + number);
-		   number++;
-	  }
-	   putchar('\n');
-	    return (0);
+	for (i = 0; i <= 9; ++i)
+		putchar('0' + i);
+
+	putchar('\n');
+
+	return (0);
 }
