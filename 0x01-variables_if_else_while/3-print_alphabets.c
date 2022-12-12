@@ -6,19 +6,19 @@
  *
  * Description: Print lower and upper alphabet on the same line
  *
- * Return: 0
+ * Return: Always 0
  */
 int main(void)
 {
-	int c;
+	char ch;
 
-	for (c = 0; c < 26; ++c)
-		putchar('a' + c);
-	for (c = 0; c < 26; ++c)
-		putchar('A' + c);
+	for (ch = 'a'; ch++)
+		putchar(ch);
 
-	putchar('A' + c);
+	for (ch = 'A'; ch<= 'Z'; ch++)
+		putchar (ch);
+
+	putchar('\n');
 
 	return (0);
-
 }
