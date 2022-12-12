@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  * main - entry point
  * Description: Print the lowercase alphabet
  * Return: Always 0
@@ -9,7 +8,6 @@
 int main(void)
 {
 	char letter;
-        
 	
 	for (letter = 'a'; letter <= 'z'; letter++)
 	{
