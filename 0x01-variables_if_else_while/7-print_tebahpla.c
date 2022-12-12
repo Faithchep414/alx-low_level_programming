@@ -1,11 +1,8 @@
 #include <stdio.h>
 
 /**
- *
- * main -Entry point
- *
- * Description: Print lowercase alphabet backwards
- * Return: 0
+ * main - Print lowercase alphabet backwards
+ * Return: Always 0
  */
 int main(void)
 {
