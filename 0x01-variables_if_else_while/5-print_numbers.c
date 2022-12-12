@@ -1,21 +1,17 @@
 #include <stdio.h>
 
 /**
- * main -Entry
- *
- * Description: Print numbers 0 to 9 on one line
- * return: 0
+ * main - prints all strings from 0 to 9
+ * Return:Always 0
  */
 int main(void)
 {
-	int number;
+	int num;
 
-	 number = 0;
-	 while (number < 10)
-	 {
-		  putchar(number + '0');
-		  number++;
-	 }
-	  printf("\n");
-	  return (0);
+	for (num = 0; num < 10; num++)
+		printf("%d", num);
+
+	printf("\n");
+
+	return (0)
 }
