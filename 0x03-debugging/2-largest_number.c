@@ -21,14 +21,21 @@ else if (a > c)
 else
 	largest = c;
 }
-else
+else if (b > a)
 {
 	if (b < c)
+		largest = b;
+
+	else
 		largest = c;
+}
+else if (a > c)
+{
+	largest = a;
 }
 else
 {
-	largest = b;
+	largest = c;
 }
 return (largest);
 }
