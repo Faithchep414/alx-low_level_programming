@@ -2,20 +2,21 @@
 
 /**
  * strcpy - copies the string pointed to by src
- * @dest: destination
- * @src: source
- * Return: string
+ * including the terminating null byte (\0),
+ * @dest: destination string
+ * @src: source string
+ *
+ * Return: pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {
-	int len = 0;
+	int i = 0;
 
-	while (*(src + len) != '\0')
+	while (src[i])
 	{
-		*(dest + len) = *(src + len);
-		len++;
+		dest[i] = src[i];
+		i++;
 	}
-
-	*(dest + len) = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
