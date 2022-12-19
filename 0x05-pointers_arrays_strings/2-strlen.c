@@ -1,10 +1,11 @@
-include "main.h"
+#include "main.h"
 /**
  * _strlen - returns the length of a full string
  * @s: string
- * Return; length
+ * Return: length
  */
 int _strlen(char *s)
+
 {
 	int longi = 0;
 
