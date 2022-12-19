@@ -3,19 +3,18 @@
 /**
  * puts2 - prints one character out of two
  * @str: input
- * Return: print
+ * Return: void
  */
 void puts2(char *str)
 {
 	int i;
 
-
-	for (; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if ((i % 2) == 0)
-			_putchar(str[i]);
-		else
-			continue;
+		_putchar(str[i]);
+		if (str[i + 1] != '\0')
+			i++;
 	}
+
 	_putchar('\n');
 }
