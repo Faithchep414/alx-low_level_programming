@@ -14,25 +14,23 @@ int largest;
 
 if (a > b)
 {
-if (b > c)
-	largest = a;
-else if (a > c)
-	largest = a;
-else
-	largest = c;
-}
-else if (b > a)
+if (a > c)
 {
-	if (b < c)
-		largest = b;
+largest = a;
+}
+else
+{
+largest = c;
+}
+}
+else if (b > c)
+{
+largest = b;
+}
+else
+{
+largest = c;
+}
 
-	else
-		largest = c;
-}
-else if (a > c)
-{
-	largest = a;
-}
-else
 return (largest);
 }
